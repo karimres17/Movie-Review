@@ -7,20 +7,20 @@ class Movie (val id: String,
              val genre: MovieGenre,
              val director: Person,
              val actors: List<Person>,
-             val review: MutableList<Review>)
+             val reviews: MutableList<Review>)
 {
     fun ratingAverage(): Double {
         var sum = 0.0
-        review.forEach {
+        reviews.forEach {
             sum += it.reviewValue
         }
 
-        val average = String.format("%.3f", sum / review.count ()).toDouble()
+        val average = String.format("%.3f", sum / reviews.count ()).toDouble()
         return average
     }
 
     override fun toString(): String {
-        return "Movie(id='$id', title='$title', release='$release', plot='$plot', genre=$genre, director=$director, actors=$actors, reviews=$review)"
+        return "Movie(id='$id', title='$title', release='$release', plot='$plot', genre=$genre, director=$director, actors=$actors, reviews=$reviews)"
     }
 
 
