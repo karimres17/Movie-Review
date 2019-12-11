@@ -17,7 +17,7 @@ object MovieRepository {
                 mutableListOf()
             ),
             Movie("1",
-                "Title 0",
+                "Title 70",
                 "09.10.2019",
                 "def",
                 MovieGenre.ACTION,

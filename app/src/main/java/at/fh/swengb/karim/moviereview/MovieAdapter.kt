@@ -36,11 +36,11 @@ class MovieViewHolder(itemView: View, val clickListener: (movie: Movie) -> Unit)
         itemView.item_movie_title.text = movie.title
         itemView.item_movie_release.text = movie.release
         itemView.item_movie_person_actor.text = movie.actors.map {it.name}.joinToString()
+        itemView.item_movie_person_director.text = movie.director.name.toString()
 
-        /*itemView.item_movie_person_director.text = movie.director.toString()
-        itemView.item_lesson_avg_rating_bar.rating = movie.ratingAverage().toFloat()
-        itemView.item_lesson_avg_rating_value.text = movie.ratingAverage().toString()
-        itemView.item_lesson_rating_count.text = movie.ratings.size.toString()*/
+        itemView.item_movie_avg_rating_bar.rating = movie.ratingAverage().toFloat()
+        itemView.item_movie_avg_rating_value.text = movie.ratingAverage().toString()
+        itemView.item_movie_rating_count.text = movie.reviews.size.toString()
 
         itemView.setOnClickListener {
             clickListener(movie)

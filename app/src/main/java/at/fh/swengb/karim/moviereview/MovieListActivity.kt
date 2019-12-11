@@ -16,12 +16,11 @@ class MovieListActivity : AppCompatActivity() {
     }
 
     val movieAdapter = MovieAdapter() {
-        val intent = Intent(this, MovieReviewActivity::class.java)
+        val intent = Intent(this, MovieDetailActivity::class.java)
         intent.putExtra(EXTRA_MOVIE_ID, it.id)
         startActivityForResult(intent, ADD_OR_EDIT_REVIEW_REQUEST)
         Toast.makeText(this, "Movie with title: ${it.title} has been clicked", Toast.LENGTH_LONG).show()
     }
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +30,8 @@ class MovieListActivity : AppCompatActivity() {
         movie_recycler_view.layoutManager = LinearLayoutManager(this)
         movie_recycler_view.adapter = movieAdapter
     }
+
+
 }
 
 
