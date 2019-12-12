@@ -14,6 +14,7 @@ object MovieRepository {
         val coactor = Person("Emma Watson", "15.04.1990")
         val coactor2 = Person("Rupert Grint", "24.08.1988")
         val producer = Person("J. K. Rowling","31.07.1965")
+        val leo = Person("Leonardo Dicaprio", "11.11.1974")
 
         movies = listOf(
             Movie("0",
@@ -87,7 +88,71 @@ object MovieRepository {
                 producer,
                 listOf(mainactor, coactor, coactor2),
                 mutableListOf()
+            ),
+            Movie("8",
+                "Titanic",
+                "09.01.1998",
+                "Seventeen-year-old Rose hails from an aristocratic family and is set to be married. When she boards the Titanic, she meets Jack Dawson, an artist, and falls in love with him.",
+            MovieGenre.ROMANCE,
+                Person("James Cameron", "16.08.1954"),
+            listOf(leo),
+            mutableListOf()
+            ),
+            Movie("9",
+                "The Wolf of Wall Street",
+                "17.12.2013",
+                "Introduced to life in the fast lane through stockbroking, Jordan Belfort takes a hit after a Wall Street crash. He teams up with Donnie Azoff, cheating his way to the top as his relationships slide.",
+                MovieGenre.ROMANCE,
+                Person("Martin Scorsee","17.11.1942"),
+                listOf(leo),
+                mutableListOf()
+            ),
+            Movie("10",
+                "The Revanant",
+                "22.01.2016",
+                "Hugh Glass, a legendary frontiersman, is severely injured in a bear attack and is abandoned by his hunting crew. He uses his skills to survive and take revenge on his companion, who betrayed him.",
+                MovieGenre.ROMANCE,
+                Person("Alejandro González Iñárritu","15.08.1963"),
+                        listOf(leo),
+                        mutableListOf()
+            ),
+            Movie("11",
+                "Inception",
+                "30.07.2010",
+                "Cobb steals information from his targets by entering their dreams. He is wanted for his alleged role in his wife's murder and his only chance at redemption is to perform the impossible, an inception.",
+                MovieGenre.ROMANCE,
+                Person("Christopher Nolan", "30.07.1970"),
+                        listOf(leo),
+                        mutableListOf()
+            ),
+            Movie("12",
+                "Romeo and Juliet",
+                "27.10.1996",
+                "The rivalry between Verona's two well-established families, the Capulets and the Montagues, affects the relationship of their children Romeo and Juliet.",
+                MovieGenre.ROMANCE,
+                Person("Baz Luhrmann", "17.09.1962"),
+                        listOf(leo),
+                        mutableListOf()
+            ),
+            Movie("13",
+                "The Great Gadsby",
+                "16.05.2013",
+                "Nick Carraway, a World War I veteran who works as a stock market trader after settling in NYC, finds himself attracted to Jay Gatsby and his flamboyant lifestyle.",
+                MovieGenre.ROMANCE,
+                Person("Baz Luhrmann", "17.09.1962"),
+                        listOf(leo),
+                        mutableListOf()
+            ),
+            Movie("14",
+                "Shutter Island",
+                "26.02.2010",
+                "Teddy Daniels and Chuck Aule, two US marshals, are sent to an asylum on a remote island in order to investigate the disappearance of a patient, where Teddy uncovers a shocking truth about the place.",
+                MovieGenre.ROMANCE,
+                Person("Martin Scorsee","17.11.1942"),
+                        listOf(leo),
+                        mutableListOf()
             )
+
         )
     }
 

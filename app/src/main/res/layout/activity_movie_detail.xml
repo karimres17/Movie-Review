@@ -11,133 +11,185 @@
         android:id="@+id/title_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Movie" />
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:paddingTop="10sp"
+        android:text="Movie"
+        android:textSize="20sp"
+        app:fontFamily="@font/oswald" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp">
 
         <TextView
             android:id="@+id/director_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Director" />
+            android:paddingLeft="5sp"
+            android:paddingTop="3sp"
+            android:paddingBottom="5sp"
+            android:text="Director"
+            app:fontFamily="@font/oswald" />
 
         <TextView
             android:id="@+id/director_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="TextView"
+            app:fontFamily="@font/oswald" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
 
         <TextView
             android:id="@+id/actor_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Actors" />
+            android:paddingLeft="5dp"
+            android:paddingBottom="3dp"
+            android:text="Actors"
+            app:fontFamily="@font/oswald" />
 
         <TextView
             android:id="@+id/actor_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="TextView"
+            app:fontFamily="@font/oswald" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
 
         <TextView
             android:id="@+id/genre_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Genre" />
+            android:paddingLeft="5dp"
+            android:text="Genre"
+            app:fontFamily="@font/oswald" />
 
         <TextView
             android:id="@+id/genre_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="TextView"
+            app:fontFamily="@font/oswald" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
 
         <RatingBar
             android:id="@+id/ratingBar"
             style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0" />
+            android:layout_weight="0"
+            android:paddingTop="3dp" />
 
         <TextView
             android:id="@+id/rating_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="TextView"
+            app:fontFamily="@font/oswald" />
 
         <TextView
             android:id="@+id/rating_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="TextView"
+            app:fontFamily="@font/oswald" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
 
         <TextView
             android:id="@+id/release_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Release" />
+            android:paddingLeft="5dp"
+            android:text="Release"
+            app:fontFamily="@font/oswald" />
 
         <TextView
             android:id="@+id/release_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="TextView"
+            app:fontFamily="@font/oswald" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="12dp"
+        android:scrollbarSize="4dp">
 
         <TextView
             android:id="@+id/plot_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Plot" />
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Plot"
+            app:fontFamily="@font/oswald" />
     </LinearLayout>
 
     <Button
         android:id="@+id/open_movie_review"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="rate movie" />
+        android:layout_marginTop="7dp"
+        android:text="rate movie"
+        app:fontFamily="@font/oswald" />
 
 </LinearLayout>

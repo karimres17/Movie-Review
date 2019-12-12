@@ -1,9 +1,11 @@
 package at.fh.swengb.karim.moviereview
 
 import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import at.fh.swengb.karim.moviereview.MovieListActivity.Companion.EXTRA_MOVIE_ID
 import kotlinx.android.synthetic.main.activity_movie_review.*
 
 class MovieReviewActivity : AppCompatActivity() {
@@ -17,6 +19,7 @@ class MovieReviewActivity : AppCompatActivity() {
         if (movieId == null) {
             Toast.makeText(this, "No movieID given", Toast.LENGTH_SHORT).show()
             finish()
+
         } else {
             val movieName = MovieRepository.movieById(movieId)?.title
             movie_rating_header.text = movieName
@@ -29,7 +32,9 @@ class MovieReviewActivity : AppCompatActivity() {
                 MovieRepository.rateMovie(movieId,rating)
 
                 setResult(Activity.RESULT_OK)
-                finish()
+                val intent = Intent (this, MovieDetailActivity::class.java)
+                intent.putExtra(EXTRA_MOVIE_ID, movieId)
+                startActivity(intent)
             }
 
             movie_rating_bar.rating.toDouble()
